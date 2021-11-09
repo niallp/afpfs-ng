@@ -21,11 +21,13 @@ Pretty standard unix stuff:
 ./configure && make && sudo make install && echo 'done!'
 ```
 
+Alternatively use checkinstall to build package (instead of make install)
+
 Use --disable-fuse and/or --disable-gcrypt if your system cannot meet those dependancies.
 (note that disabling gcrypt will prevent you from using login/password auth.)
 
-The command line tool needs ncurses-dev and libreadline-dev to compile. Install them
-with sudo apt-get install ncurses-dev libreadline-dev on ubuntu/debian.
+The command line tool needs ncurses-dev, libreadline-dev and libfuse-dev (optional) to compile. 
+Install them with sudo apt-get install ncurses-dev libreadline-dev libfuse-dev on ubuntu/debian.
 
 ### Usage
 
